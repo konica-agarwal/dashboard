@@ -1,20 +1,98 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+ <nav class="navbar navbar-expand-sm">
+<div class="container-fluid">
+    <ul class="navbar-nav navbar-left">
+      <li class="nav-item">
+        <a class="nav-link" routerLink = "/dashboard">Dashboard</a>
 
+      </li>
+       <span class="line"></span>
+      <li class="nav-item">
+          
+        <a class="nav-link" routerLink= "/mylists">My lists</a>
+      </li>
+    </ul>
+  
+      <ul class="navbar-nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link badge badge-warning"> 
+            <img src="/assets/img/credits.png">50 Credits
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"><span class="text">
+            Buy extra credits</span>
+            <img src="/assets/img/help.png" class="rounded-circle">
+          </a>
+        </li>
+
+        <li class="nav-item dropdown" >
+             <span class="line"></span> 
+          Hi Ann!
+           <img src="/assets/img/Screenshot (80).png" class="rounded-circle profile">
+           <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+             <img src="/assets/img/arrow.png"> 
+          </a>
+          <div class="dropdown-menu">
+            <h5 class="dropdown-header">Your plan:GoPinLeads Free</h5>
+            <a href="#" class="dropdown-item"> <img src="/assets/img/my-account-icon.png" >See My Account</a>
+            <a href="#" class="dropdown-item"><img src="/assets/img/plan-icon.png" >See Plans</a>
+            <a href="#" class="dropdown-item"><img src="/assets/img/modules-icon.png" >See Modules</a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item text-center"><span class="badge badge-primary">Use code</span></a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item"><img src="/assets/img/refer-earn-icon.png">Refer and Earn</a>
+            <a href="#" class="dropdown-item text-danger"><img src="/assets/img/cancel-icon.png">Cancel Subscription</a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item text-center"><span class="badge badge-secondary"><img src="/assets/img/logout-icon.png">Logout</span></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<nav class="sidebar">
+  <ul class="list-unstyled">
+   <li>
+     <a >
+       <img src="/assets/img/logo-icon.png">
+     </a>
+   </li> 
+   <li (mouseover)="onMouseOver()" (mouseout)="onMouseOut()">
+     <a routerLink="/mainpage">
+      <img [src]="imgSrc" />
+     </a>
+   </li>
+   <li (mouseover)="onMouseOver1()" (mouseout)="onMouseOut1()">
+     <a>
+       <img [src]="imgSrc1" />
+     </a>
+   </li>
+   <li (mouseover)="onMouseOver2()" (mouseout)="onMouseOut2()">
+     <a>
+       <img [src]="imgSrc2" />
+     </a>
+   </li>
+   <li (mouseover)="onMouseOver3()" (mouseout)="onMouseOut3()">
+     <a>
+       <img [src]="imgSrc3" />
+     </a>
+   </li>
+   <hr>
+   <li>
+     <a>
+       <img src="/assets/img/populardatabase.png">
+     </a>
+   </li>
+   <li>
+    <div class="help">
+     <a>
+      <img src="/assets/img/help.png">
+      <p>help</p>
+     </a>
+    </div>
+   </li>
+  </ul>
+</nav>
+
+
+
+<router-outlet></router-outlet>

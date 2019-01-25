@@ -1,0 +1,241 @@
+    :host { color: gray;  }
+    :host h5{
+      color: #242525;
+    }
+    .box-1 .text-secondary{
+      margin-bottom: 8px;
+    }
+
+/*
+    :host ::ng-deep .tabset1 a.nav-link {
+    background-color: #c8dee5;
+    color: black;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 70px;
+    padding-right: 70px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    }*/
+      :host .tabset1{
+       width: 100%;
+     } 
+
+     .tab-content {
+      margin-top: 26px;
+    }
+    .box-1 .btn{
+    background-color: #c8dee5;
+    color: black;
+    margin-left: 0px;
+    cursor: pointer;
+    padding: 12px;
+  
+    }
+    .box-1 .activeBtn{
+      color: white;
+      font-weight: bold;
+      background-color:#1b7997 ;
+    }
+    :host .box-border{
+      border: 1px solid #1b7997;
+      width: 200px;
+      display: inline-block;
+      border-radius: 0px;
+      height: 502px;
+    }
+     :host .green-border{
+      border-top: 4px solid #00b42b;
+      position: relative;
+      top: -10px;
+     }
+     :host .yellow-border{
+      border: 4px solid #f4b619;
+    width: 204px;
+    display: inline-block;
+    height: 535px;
+    border-radius: 12px;
+    position: relative;
+    z-index: 3;
+    left: -2px;
+    }
+     :host .banner-container {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  &:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 5px;
+    background-color: #00b42b;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  &:before {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 5px;
+    background-color:#00b42b;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+:host .banner {
+  width: 200px;
+  padding: 5px;
+  background-color:#00b42b;
+  color: #fff;
+  text-align: center;
+  transform: rotate(-45deg) translate(-30%, -100%);
+  font-size: 10px;
+  
+}
+  :host .card .card-body img {
+    height: 46px;
+    width: 46px;
+  }
+  :host .card .card-body h3{
+     color: #1b7997;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  :host .card .card-body h5{
+    font-size: 18px;
+  }
+
+:host .row{
+  margin-left: 0px;
+}
+:host .tabset1 .leftMargin{
+margin-left: -4px;
+}
+:host .tabset1 .manage-height{
+    position: relative;
+    top: -170px;
+}
+:host .tabset1 .card .card-body .text-center .below-margin{
+  margin-bottom: 54px;
+}
+:host .tabset1 .card .card-body .text-center{
+  font-size: 12px;
+}
+:host .tabset1 .card .card-body .text-center .bold-font {
+  font-size: 32px;
+  font-weight: bolder;
+}
+:host .tabset1 .card .card-body .text-center .btn {
+  margin-left: 0px;
+  margin-bottom: 24px;
+  margin-top: 10px;
+  width: auto;
+}
+:host .tabset1 .card .card-body .text-center .below-margin1{
+  margin-bottom: 43px;
+}
+:host .tabset1 .card .card-body .text-center .below-margin2{
+  margin-bottom: 80px;
+}
+:host .reduce-gap{
+margin-bottom: 0px;
+}
+:host .tabset1 .card .card-body .text-center a{
+  text-decoration: underline;
+}
+:host .tabset1 .card .card-body .text-center .below-margin3{
+  margin-bottom: 52px;
+}
+:host .tabset1 .card .card-body .extra{
+  margin-top: 15px ;
+}
+:host .tabset1 .card .card-body .text-center .btn-primary{
+  background-color: #1b7997;
+  color: white;
+}
+:host .tabset1 .card .card-body .text-center .btn-warning{
+  color: white;
+  background-color: #ffc107;
+}
+.container .box-2 .btn{
+  margin-left: 0px;
+  width: 180px;
+  margin-top: 0px;
+}
+
+@media (max-width: 1200px){
+  :host .box-border{
+      border: 1px solid #1b7997;
+      width: 50%;
+      float: left;
+      border-radius: 0px;
+      height: 500px
+    }
+    :host .green-border{
+      border-top: 4px solid #00b42b;
+      position: relative;
+      top: 0px;
+     }
+    :host .yellow-border{
+      border: 4px solid #f4b619;
+    width: 50%;
+    float: left;
+    height: 500px;
+    border-radius: 0px;
+    left:0px;
+    }
+    :host .manage-height{
+      border: 1px solid #1b7997;
+      width: 100%;
+      height: 300px !important;
+      margin-top: 168px;
+    }
+    :host .tabset1 .leftMargin {
+      margin-left: 0px;
+    }
+    :host .tabset1 .card .card-body .extra{
+      margin-top: 0px; ;
+   }
+
+}
+@media (max-width: 468px){
+    :host .box-border{
+      border: 1px solid #1b7997;
+      width: 100%;
+      float: left;
+      border-radius: 0px;
+      height: 500px
+    }
+    :host .green-border{
+      border-top: 4px solid #00b42b;
+     }
+    :host .yellow-border{
+    border: 4px solid #f4b619;
+    width: 100%;
+    float: left;
+    height: 500px;
+    border-radius: 0px;
+    left:0px;
+    }
+    :host .manage-height{
+      border: 1px solid #1b7997;
+      width: 100%;
+      height: 500px !important;
+      margin-top: 168px;
+    }
+    :host .tabset1 .leftMargin {
+      margin-left: 0px;
+    }
+    :host .tabset1 .card .card-body .extra{
+      margin-top: 0px; ;
+   }
+}

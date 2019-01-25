@@ -1,0 +1,119 @@
+    :host { color: gray;  }
+     h5{
+      color: #242525;
+    }
+    .container .box-1{
+      padding-right: 0px;
+    }
+    .container .box-1 .text-secondary{
+      margin-bottom: 8px;
+    }
+
+     .container .box-1 .content {
+      margin-top: 26px;
+    }
+    .container .box-1 .btn{
+    color: black;
+    margin-left: 0px;
+    cursor: pointer;
+    padding: 12px;
+    }
+     .container .box-1 .btn-tabs{
+    background-color: #c8dee5;
+  }
+    .container .box-1 .activeBtn{
+      color: white;
+      font-weight: bold;
+      background-color:#1b7997 ;
+    }
+    
+    .container .box-1 .content h4{
+     color: #1b7997;
+     font-weight: bold;
+     font-size: 14px;
+     margin-top: 12px;
+    }
+    .container .box-1 .content .bar-width{
+      width: 98%;
+    }
+    .container .box-1 .content  .small-box{
+     max-width: 188px !important;
+     height: auto;
+     display: inline-block;
+     margin-top: 12px;
+     margin-left: 0px;
+     margin-right: 16px;
+
+    }
+    .container .box-1 .content  .small-box .heading{
+      color: #242525;
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: -5px
+    }
+    .container .box-1 .small-box img{
+      height: 20px;
+      width: 20px;
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+    .container .box-1 .content .small-box .small-text{
+      color: grey;
+      line-height: 1.3;
+      font-size: 12px;
+      padding: 0px 2px;
+    }
+    .btn-new{
+      width: 185px;
+      font-weight: bold;
+      color: white !important;
+    }
+ /*   @media (max-width : 1200px){
+   .container .box-1 .content  .small-box{
+     max-width: 225px !important;
+     height: auto;
+     display: inline-block;
+     margin-top: 12px;
+    }
+    .container .box-1 .content  .small-box .heading{
+      color: #242525;
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: -5px
+    }
+    .container .box-1 .small-box img{
+      height: 20px;
+      width: 20px;
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+    .container .box-1 .content .small-box .small-text{
+      color: grey;
+      line-height: 1.3;
+      font-size: 12px;
+      padding: 0px 2px;
+    }
+    .container .box-1 .content .small-box .left-maring{
+      margin-left: 0px;
+    }
+    }*/
+     @media (max-width : 767px){
+       .container .box-1 .content  .small-box{
+    
+     height: auto;
+     display: inline-block;
+     margin-top: 12px;
+     align-content: center;
+    }
+  .center-text{
+    margin: 0 auto;
+    padding: auto;
+  }
+
+     }
+   
+  
+
+

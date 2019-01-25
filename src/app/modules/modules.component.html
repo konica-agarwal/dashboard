@@ -1,0 +1,151 @@
+<div class="container">
+	<div class="box-1">
+		<div>
+			<h5>Select the features you need in GoPinLead</h5>
+			<p class="text-secondary">choose the perfect plan for you</p>
+			<p class="text-secondary">the modules will complement your current plan with come of your more valuable features</p>
+		</div>
+	    <div class="row">
+	    		<div class="col-md-3 col-sm-6 col-lg-2">
+	    			<button class="btn btn-tabs" routerLink="/mylists" routerLinkActive="activeBtn">Plans</button>
+	    		</div>
+	    		<div class="col-md-3 col-sm-6 col-lg-2">
+	    			<button class="btn btn-tabs" routerLink="/modules" routerLinkActive="activeBtn">Modules</button>
+	    		</div>
+	    	</div>
+	    	<div>
+	    		<div class="content" >
+	               <div class="cartBox bar-width">
+	               	<p class="float-right pr-3"><img src="/assets/img/shopping-cart.png"> Shopping cart: {{(shoppingCartItems$ | async).length}}</p>
+	               </div> 
+	             <div class="center-text">
+	               <h4 >Buy advicing services</h4>
+	               <div class="small-box text-center ">
+	               	<p class="heading">Concierge service</p>
+	               	<hr>
+	               	<p class="text-dark font-weight-bold">$XX/ month</p>
+	               	<p class="small-text">[Text explaining the module]
+	               	lorem ipsum dolor sit amet, consetdun adlipdhi dhii.uhdldh xiksisn xjkks. </p>
+	               	<div class="cartBox">
+	               		<a (click)="addToCart(product); onClick2()">
+	               		<img [src]="imgSrc1"/>{{text1}}</a>
+	               	</div>
+	               </div>
+	               <div class="small-box text-center ">
+	               	<p class="heading">Initial consultation</p>
+	               	<hr>
+	               	<p class="text-dark font-weight-bold">$XX/ month</p>
+	               	<p class="small-text">[Text explaining the module]
+	               	lorem ipsum dolor sit amet, consetdun adlipdhi dhii.uhdldh xiksisn xjkks. </p>
+	               	<div class="cartBox">
+	               		<a (click)="addToCart(product); onClick1()" >
+	               		<img [src]="imgSrc"/>{{text}}</a>
+	               	</div>
+	               </div>
+                 </div>
+	               <h4 >Buy search modules</h4>
+	               <div class="small-box text-center ">
+	               	<p class="heading">Venue details</p>
+	               	<hr>
+	               	<p class="text-dark font-weight-bold">$XX/ month</p>
+	               	<p class="small-text">[Text explaining the module]
+	               	lorem ipsum dolor sit amet, consetdun adlipdhi dhii.uhdldh xiksisn xjkks. </p>
+	               	<div class="cartBox">
+	               		<a (click)="addToCart(product)">
+	               		<img src="/assets/img/shopping-cart.png">Add to shopping cart</a>
+	               	</div>
+	               </div>
+	               <div class="small-box text-center ">
+	               	<p class="heading">Employee details</p>
+	               	<hr>
+	               	<p class="text-dark font-weight-bold">$XX/ month</p>
+	               	<p class="small-text">[Text explaining the module]
+	               	lorem ipsum dolor sit amet, consetdun adlipdhi dhii.uhdldh xiksisn xjkks. </p>
+	               	<div class="cartBox">
+	               		<a (click)="addToCart(product)">
+	               		<img src="/assets/img/shopping-cart.png">Add to shopping cart</a>
+	               	</div>
+	               </div>
+	               <div class="small-box text-center ">
+	               	<p class="heading">Google search</p>
+	               	<hr>
+	               	<p class="text-dark font-weight-bold">$XX/ month</p>
+	               	<p class="small-text">[Text explaining the module]
+	               	lorem ipsum dolor sit amet, consetdun adlipdhi dhii.uhdldh xiksisn xjkks. </p>
+	               	<div class="cartBox">
+	               		<a (click)="addToCart(product)">
+	               		<img src="/assets/img/shopping-cart.png">Add to shopping cart</a>
+	               	</div>
+	               </div>
+	               <h4 >Lorem ipsum</h4>
+	               <div class="small-box text-center ">
+	               	<p class="heading">Lorem Ipsum 1</p>
+	               	<hr>
+	               	<p class="text-dark font-weight-bold">$XX/ month</p>
+	               	<p class="small-text">[Text explaining the module]
+	               	lorem ipsum dolor sit amet, consetdun adlipdhi dhii.uhdldh xiksisn xjkks. </p>
+	               	<div class="cartBox">
+	               		<a (click)="addToCart(product)">
+	               		<img src="/assets/img/shopping-cart.png">Add to shopping cart</a>
+	               	</div>
+	               </div>
+	               <div class="small-box text-center ">
+	               	<p class="heading">Lorem Ipsum 2</p>
+	               	<hr>
+	               	<p class="text-dark font-weight-bold">$XX/ month</p>
+	               	<p class="small-text">[Text explaining the module]
+	               	lorem ipsum dolor sit amet, consetdun adlipdhi dhii.uhdldh xiksisn xjkks. </p>
+	               	<div class="cartBox">
+	               		<a (click)="addToCart(product)">
+	               		<img src="/assets/img/shopping-cart.png">Add to shopping cart</a>
+	               	</div>
+	               </div>
+	               <div class="small-box text-center ">
+	               	<p class="heading">Lorem Ipsum 3</p>
+	               	<hr>
+	               	<p class="text-dark font-weight-bold">$XX/ month</p>
+	               	<p class="small-text">[Text explaining the module]
+	               	lorem ipsum dolor sit amet, consetdun adlipdhi dhii.uhdldh xiksisn xjkks. </p>
+	               	<div class="cartBox">
+	               		<a (click)="addToCart(product)">
+	               		<img src="/assets/img/shopping-cart.png">Add to shopping cart</a>
+	               	</div>
+	               </div>
+	               <div class="small-box text-center ">
+	               	<p class="heading">Lorem Ipsum 4</p>
+	               	<hr>
+	               	<p class="text-dark font-weight-bold">$XX/ month</p>
+	               	<p class="small-text">[Text explaining the module]
+	               	lorem ipsum dolor sit amet, consetdun adlipdhi dhii.uhdldh xiksisn xjkks. </p>
+	               	<div class="cartBox">
+	               		<a (click)="addToCart(product)">
+	               		<img src="/assets/img/shopping-cart.png">Add to shopping cart</a>
+	               	</div>
+	               </div>
+	               <div class="small-box text-center ">
+	               	<p class="heading">Lorem Ipsum 5</p>
+	               	<hr>
+	               	<p class="text-dark font-weight-bold">$XX/ month</p>
+	               	<p class="small-text">[Text explaining the module]
+	               	lorem ipsum dolor sit amet, consetdun adlipdhi dhii.uhdldh xiksisn xjkks. </p>
+	               	<div class="cartBox">
+	               		<a (click)="addToCart(product)">
+	               		<img src="/assets/img/shopping-cart.png">Add to shopping cart</a>
+	               	</div>
+	               </div>
+	               <br>
+	               <button class="btn btn-new">Proceed to checkout</button>
+	            </div>
+		
+	</div>
+
+ </div>
+</div>
+  
+
+    
+
+
+
+
+  

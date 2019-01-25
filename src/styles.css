@@ -1,1 +1,320 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
 /* You can add global styles to this file, and also import other style files */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body{
+	background-color: #f6fbfe;
+	padding:0px;
+	margin:0px;
+	 font-family: 'Roboto', sans-serif;
+}
+.container-fluid{
+	padding:0px;
+	margin:0px;
+}
+.navbar{
+	/*height:80px;*/
+	background-color: white;
+	width: 100%;
+	box-shadow : 0px 3px 40px -10px grey;
+}
+
+.navbar .navbar-nav{
+	margin-left: 80px;
+	padding-left: 20px;
+}
+.navbar .navbar-nav .nav-item:first-child{
+	padding-right: 10px;
+	
+}
+.line{
+	border-right: 2px solid black;
+	height: 20px;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+/*.navbar .left-side .navbar-nav .nav-item{
+padding-left: 10px;
+}*/
+
+
+.navbar  .navbar-nav  .nav-item{
+	cursor: pointer;
+	padding: 10px;
+}
+.navbar  .navbar-nav  .nav-item .nav-link{
+	color: black;
+}
+.navbar  .navbar-right .nav-item:first-child .nav-link{
+	    margin-top: 8px;
+}
+
+.navbar  .navbar-nav  .nav-item:first-child .nav-link img{
+	height: 20px;
+	padding: 2px;
+}
+.navbar .navbar-nav  .nav-item:nth-child(2) .nav-link img{
+	height: 24px;
+	background-color: #1b7997;
+	padding: 5px;
+	    margin-top: -5px;
+    margin-left: 6px;
+}
+.text{
+	color: #1b7997;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.profile{
+	height: 46px;
+	width: 45px;
+	border: 1px solid grey;
+}
+.navbar  .navbar-nav  .nav-item:nth-child(3) .nav-link img{
+    height: 26px;
+    width: 24px;
+border: none;
+}
+
+.navbar  .navbar-nav  .nav-item:nth-child(3) .nav-link{
+	display: inline-block;
+}
+.sidebar {
+	width: 100px;
+	position: fixed;
+	left: 0;
+	top:0;
+	z-index: 999;
+	height: 100%;
+	box-shadow: 3px 0px 30px -10px grey;
+	background-color: white;
+}
+.sidebar li{
+	padding: 10px 5px 10px 32px;
+	cursor: pointer;
+}
+.sidebar li:hover{
+	color: blue;
+	background-color: #daefff;
+	border-left: 4px solid  #1b7997;
+	position: relative;
+}
+
+
+.sidebar li:hover:after {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(218, 239, 255, 0);
+	border-left-color: #daefff;
+	border-width: 10px;
+	margin-top: -8px;
+}
+.sidebar li:last-child:hover{
+	
+	background-color: transparent;
+	border-left: none;
+}
+.sidebar li:last-child:hover:after{
+	display: none;
+}
+.sidebar li a{
+	width: 100%;
+	height: 100%;
+
+}
+.sidebar li a img {
+    height: 30px;
+	width: 30px;
+}
+.sidebar li:first-child a img {
+    height: 46px;
+    width: 51px;
+    margin-left: -10px;
+}
+.help{
+	background-color: #00b329;
+	border-radius: 50%;
+	padding: 4px;
+	position: relative;
+	width: 48px;
+	height: 48px;
+	margin-top: 70px;
+	box-shadow: 3px 3px 10px;
+	margin-left: -11px;
+}
+.help img{
+	
+    padding: 8px;
+    margin-top: -5px;
+    margin-left: 6px;
+}
+.help p{
+	text-align: center;
+    margin-top: -10px;
+    color: white;
+}
+.container{
+	margin-bottom: 100px;
+}
+.box-1{
+    height:auto;
+	width:94%;
+    background-color: white;
+    border: 1px solid #9d9f93;
+    margin-top: 50px; 
+    margin-left: 80px;
+    padding: 18px;
+}
+.box-1 h4{
+		color: #1b7997;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+.box-1 small{
+	color: grey;
+/*	position: relative;
+	top: -10px;*/
+}
+.container .box-1 img{
+height: 20px;
+width: 20px;
+margin-right: 10px;
+}
+.box-2{
+	height: auto;
+	width:94%;
+    background-color: white;
+    border: 1px solid #9d9f93;
+    margin-top: 50px; 
+    margin-left: 80px;
+    padding: 18px;
+}
+.box-2 h4{
+	color: #1b7997;
+	font-weight: bold;
+}
+.box-2 p{
+	font-weight: 500;
+}
+.box-2 small{
+	color: grey;
+	position: relative;
+	top: -18px;
+}
+.form-check{
+	background-color:#f6fbfe;
+	width: 60%;
+	margin-bottom: 20px;
+}
+.form-check-label{
+	padding: 10px;
+}
+.form-check-input{
+	height: 40px;
+    width: 30px;
+}
+.box-2 .texts{
+	padding-left: 20px;
+}
+.container .link{
+	color: #1b7997;
+	text-decoration: underline;
+}
+.btn{
+    color: white;
+    margin-left: 83px;
+    margin-top: 20px;
+    width: 150px;
+}
+.btn-new{
+	background-color: #1b7997;
+}
+.dropdown{
+	position: relative;
+}
+.dropdown .dropdown-menu{
+position: absolute;
+left: -100px;
+}
+.dropdown .dropdown-menu .dropdown-header{
+	color: #309447;	
+	background-color:#ebf9ef;
+	margin-top: -8px;
+}
+ .dropdown .dropdown-menu .dropdown-item img{
+	height: 24px;
+    width: 24px;
+    margin-right: 7px;
+}
+.badge-primary{
+	background-color: #c8dee5;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: black;
+    padding-left: 60px;
+    padding-right: 60px;
+    cursor: pointer;
+}
+.badge-secondary{
+	padding-bottom: 10px;
+    padding-top: 10px;
+    color: black;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #eeefef;
+    cursor: pointer;
+}
+.in-line{
+	display: inline-block;
+}
+.adjustImage{
+	margin-top: -28px;
+}
+.container .box-1 .small-box{
+    max-width: 132px !important;
+    height: 132px;
+    border: 1px solid grey;
+    padding: 0px;
+    display: block;
+    margin-top: 24px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.container .box-1 .small-box:hover{
+	border: 1px solid #1b7997;
+}
+.container .box-1 .small-box .upper-half{
+	height:80px;
+	background-color: #f4f4f4;
+	width: 99%; 	
+    margin-top: 1px;
+}
+.container .box-1 .small-box img{
+    width: 44px;
+    height: 44px;
+    margin-left: 44px;
+    margin-top: 20px;
+}
+.container p{
+	line-height: 1;
+}
+/*modules*/
+.cartBox{
+      background-color: #cad4dea3;
+      height: 34px;
+      color: #1b7997;
+      width: 100%;
+      font-size: 12px;
+      padding-top:7px; 
+    }
+
+

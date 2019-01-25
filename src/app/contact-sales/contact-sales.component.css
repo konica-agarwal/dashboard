@@ -1,0 +1,80 @@
+.modal .modal-dialog .modal-content .modal-body{
+    margin-top: -77px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+.modal .modal-dialog .modal-content .modal-body .image-box{
+	background-color: #f3f6f9;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.modal .modal-dialog .modal-content .modal-body .image-box img{
+	width: 150px;
+	height: 150px;
+}
+.modal .modal-dialog .modal-content .modal-body .image-box h3{
+ color: #1b7997;
+    font-weight: bold;
+    margin-top: 6px;
+    font-size: 22px;
+    text-align: center;
+}
+@media (min-width: 992px){
+	.modal-lg{
+		max-width: 750px;
+	}
+}  
+ h4 {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: -38px;
+    font-size: 26px;
+}      
+.close {
+    float: right;
+    opacity: 1;  
+    font-weight: 500;  
+    padding: 0;
+    border: 0;
+    -webkit-appearance: none;
+    position: relative;
+    top: -70px;
+    left: 350px;
+    color: white;
+}
+.close:focus {
+    color: white;
+    text-decoration: none;
+    opacity: .75;
+}
+.bottom-margin{
+    margin-bottom: 0.5em;
+    color: #484646;
+}
+.form-group .form-control{
+    height: 42px;
+    font-size: 14px;
+}
+label{
+    color: #484646;
+}
+.btn-new{
+    margin-bottom: 20px;
+    width: 162px;
+}
+@media (min-width: 576px){
+    .modal .modal-dialog .modal-content .modal-body{
+    margin-top: -77px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+   }
+   .form-row{
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+}
+

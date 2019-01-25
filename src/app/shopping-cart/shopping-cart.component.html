@@ -1,0 +1,25 @@
+<div class="box-1"> 
+<p>You have {{shoppingCartItems.length}} items in your bag</p>
+<table border="1">
+	  <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Photo</th>
+        <th>Buy</th>
+    </tr>
+
+<tr *ngFor="let item of shoppingCartItems">
+  
+    <td> {{item.id}} </td>
+    <td> {{item.name}} </td>
+    <td> {{item.price}} </td>
+    <td> {{item.currency}} </td>
+  
+  <td>
+  <button class="remove-item" (click)="removeItem(item)">Remove</button></td>
+
+<td>Total: {{getTotal() | async}}</td>
+</tr>
+</table>
+</div>
