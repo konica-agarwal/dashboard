@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 import {NgForm} from '@angular/forms';
 
 @Component({
@@ -11,6 +12,12 @@ export class ContactSalesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+model : any ={};
+    onSubmit(form:NgForm) { 
+   alert('SUCCESS !! ' );
+   form.reset();
+  }
+
 
   }
   onInputEntry(event, nextInput) {
