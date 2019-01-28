@@ -9,6 +9,10 @@ import {NgForm} from '@angular/forms';
 })
 export class ContactSalesComponent implements OnInit {
 model : any ={};
+  onSubmit(form:NgForm) { 
+   alert('SUCCESS !! ' );
+ 
+  }
 
   constructor() { }
 
