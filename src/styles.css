@@ -10,16 +10,34 @@ body{
 	margin:0px;
 	 font-family: 'Roboto', sans-serif;
 }
+
 .container-fluid{
 	padding:0px;
 	margin:0px;
 }
 .navbar{
+position: relative;
 	/*height:80px;*/
 	background-color: white;
 	width: 100%;
 	box-shadow : 0px 3px 40px -10px grey;
 }
+.navbar .navbar-toggler-icon{
+  color: grey;
+ top:3px;
+  position: absolute; 
+ 	right: 8px;
+
+}
+/* .collapsible-header {
+ 	position: relative;
+ }*/
+ 
+ 	@media(max-width:767px ){
+ .line{
+ 	display: none;
+ }
+ 	}
 
 .navbar .navbar-nav{
 	margin-left: 80px;
