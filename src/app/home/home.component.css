@@ -1,0 +1,13 @@
+
+.container .box-1 .center-image img {
+	height: 100px;
+	width: 100px;
+}
+.container .box-1 p{
+	line-height: 1.5;
+	margin-top: 32px;
+}
+.container .box-1 .btn{
+	width: 312px;
+	margin-left: 0px;
+}

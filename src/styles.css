@@ -336,6 +336,13 @@ left: -100px;
       padding-top:7px; 
     }
 /*--end--*/
+/*home*/
+.container .box-1 .center-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*--end--*/
 @media(max-width: 608px){
 	.box-1{
 		width: auto;

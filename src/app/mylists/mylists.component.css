@@ -24,6 +24,7 @@
 
      .tab-content {
       margin-top: 26px;
+      margin-bottom: -150px;
     }
     .box-1 .btn{
     background-color: #c8dee5;

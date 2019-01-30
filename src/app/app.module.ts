@@ -14,6 +14,7 @@ import { ModulesComponent } from './modules/modules.component';
 import { ProductsService } from './products.service';
 import { CartService } from './cart.service';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -26,6 +27,7 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
     ContactSalesComponent,
     ModulesComponent,
     ShoppingCartComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
