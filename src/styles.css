@@ -192,6 +192,11 @@ border: none;
     margin-left: 80px;
     padding: 18px;
 }
+@media(max-width: 608px){
+	.box-1{
+		width: auto;
+	}
+}
 .box-1 h4{
 		color: #1b7997;
 	font-weight: bold;
