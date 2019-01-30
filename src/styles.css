@@ -192,11 +192,7 @@ border: none;
     margin-left: 80px;
     padding: 18px;
 }
-@media(max-width: 608px){
-	.box-1{
-		width: auto;
-	}
-}
+
 .box-1 h4{
 		color: #1b7997;
 	font-weight: bold;
@@ -339,5 +335,20 @@ left: -100px;
       font-size: 12px;
       padding-top:7px; 
     }
-
-
+/*--end--*/
+@media(max-width: 608px){
+	.box-1{
+		width: auto;
+	}
+	.box-2{
+		width: auto;
+	}
+}
+@media(max-width: 576px){
+.sidebar{
+	width: 70px;
+}
+.sidebar li{
+	padding: 10px 5px 10px 20px
+}
+}
